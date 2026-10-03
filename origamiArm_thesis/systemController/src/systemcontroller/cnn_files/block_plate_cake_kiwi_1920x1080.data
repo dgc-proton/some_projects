@@ -1,0 +1,5 @@
+classes = 4
+train = /home/dv1/Documents/degree_Y4/EG45PE_MEng_Individual_Project/code/darknet/block_plate_cake_kiwi_1920x1080/block_plate_cake_kiwi_1920x1080_train.txt
+valid = /home/dv1/Documents/degree_Y4/EG45PE_MEng_Individual_Project/code/darknet/block_plate_cake_kiwi_1920x1080/block_plate_cake_kiwi_1920x1080_valid.txt
+names = /home/dv1/Documents/degree_Y4/EG45PE_MEng_Individual_Project/code/darknet/block_plate_cake_kiwi_1920x1080/block_plate_cake_kiwi_1920x1080.names
+backup = /home/dv1/Documents/degree_Y4/EG45PE_MEng_Individual_Project/code/darknet/block_plate_cake_kiwi_1920x1080

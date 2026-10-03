@@ -1,0 +1,47 @@
+max_motor_moves = 128
+check_workspace_lib = True
+
+[arm.linklengths]
+left_mm = 172
+left_center_mm = 145
+right_center_mm = 185
+right_mm = 135
+
+[comms]
+# ls /dev/serial/by-id/usb*
+usb_serial_port = "/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_5503731303735120E002-if00"
+# usb_serial_port = "/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_55731323735351303270-if00"
+baudrate = 115200
+timeout = 0.5
+write_timeout = 0.5
+
+[debug]
+profile_code = false
+# valid operating modes are:
+# "normal"
+# "vision_only" - display the camera and detections
+# "calc_coords_only" - calculate coordinates to test integration of the kinematics library
+# "manual_step" - manually send steps to the MCU for testing
+# "full_debug" - (used during initial development, currently unmaintained)
+# "manual2coords" - click on the image, arm moves there
+# "side2side_manual" "side2side_auto" - move the arm to aid in testing motors and MCU
+# "takevideo" - take a video, e.g. for use later in training AI models
+# "calibrate" - calibrate mm to pixels at a given height using the calibration sheet
+# "intrinsics_cal" - carry out chessboard calibration and generate a new cal_cam.npz file containing calculated intrinsic camera properties to un-distort images
+operating_mode = "calibrate"
+showscreen = true  # show screen on normal operating mode
+
+[camera]
+width_px = 1280
+height_px = 720
+# v4l2-ctl --list-devices
+# v4l2-ctl --list-formats-ext -d /dev/video3
+# ffplay -f v4l2 -input_format mjpeg -video_size 1920x1080 -framerate 30 -i /dev/video3 
+# ffplay -video_size 1920x1080 - framerate 30 /dev/video2
+# v4l2-ctl -d /dev/video2 --list-ctrls-menus
+# v4l2-ctl -d /dev/video2 --set-ctrl=focus_automatic_continuous=0
+device = "/dev/video3"
+fps = 30
+opencv_fourcc = "MJPG"
+pixels_per_mm_arm = 1.995
+pixels_per_mm_table = 1.4465

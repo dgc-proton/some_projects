@@ -1,0 +1,2 @@
+ffmpeg -i block_and_code_output.avi -f image2 -c:v mjpeg %03d.jpg
+

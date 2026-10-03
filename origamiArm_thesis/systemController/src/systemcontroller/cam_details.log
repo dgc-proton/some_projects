@@ -1,0 +1,24 @@
+openCV VideoCapture details:
+FPS: (30.0,)
+width: 1920.0
+height: 1080.0
+frame type: -1.0
+fourcc: 1196444237.0
+backend: 200.0
+bitrate: -1.0
+brightness: 0.0
+channel: -1.0
+codec extradata index: -1.0
+codec pixel format: -1.0
+contrast: 57.0
+exposure: 300.0
+focus: 512.0
+format: 16.0
+gain: 0.0
+gamma: 214.0
+GUID: -1.0
+hue: 0.0
+HW device: -1.0
+iso speed: -1.0
+mode: 0.0
+sharpness: 32.0

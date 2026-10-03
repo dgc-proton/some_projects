@@ -1,0 +1,27 @@
+[project]
+name = "systemcontroller"
+version = "0.1.0"
+description = "A system to control a pentographic oragami robot arm (Dave Riley MEng thesis)"
+readme = "README.md"
+authors = [
+    { name = "Dave", email = "dave_gen_contact@proton.me" }
+]
+requires-python = ">=3.10, <=3.10.12"  # Jetpack SDK on Orin Nano currently stuck at 3.10
+dependencies = [
+    "darknet-hankai>=3.0.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.2.6",
+    "opencv-python>=4.13.0.92",
+    "pyqt5>=5.15.11",
+    "pyqt6>=6.11.0",
+    "pyserial>=3.5",
+    "scikit-image>=0.25.2",
+    "tomli>=2.4.1",
+]
+
+[project.scripts]
+systemcontroller = "systemcontroller.main:main"
+
+[build-system]
+requires = ["uv_build>=0.9.30,<0.10.0"]
+build-backend = "uv_build"

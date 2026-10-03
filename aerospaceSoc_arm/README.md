@@ -1,3 +1,5 @@
+# Aerospace Society Arm
+
 The Aberdeen University Aerospace Society started a side project to create a robot arm. The plan is for an initial arm with basic functionality which can be adapted to various more specific use cases by members as desired. The project is currently on hold while the society focuses time and resources on remediating issues with its main UAV project.
 
 Mechanical design was done by Ben Pickering, electronics, PCB design and firmware by Dave Riley.
