@@ -7,14 +7,20 @@ Details from a selection of projects I've worked on recently. I'm not able to pu
 
 I designed and built an autonomous control system for an unusual type of robotic arm [further details](origamiArm_thesis).
 
-![Picture of the hardware for my thesis](/origamiArm_thesis/equipment_overview.png) ![Picture of objects being detected.](/origamiArm_thesis/yolo_detection.png)
+<p float="centre">
+  <img src="origamiArm_thesis/equipment_overview.png" width="49%" />
+  <img src="origamiArm_thesis/yolo_detection.png" width="49%" />
+</p>
 
 ## PCB Design for Aerospace Society Robot Arm
 *PCB design, electronics, motors, KiCAD, AVR toolchain & header files (ATTiny1616), Pi Pico C SDK, CMake, Git*
 
 I designed a PCB (and started developing firmware before the project was paused) for controlling a more standard type of robotic arm [further details](/aerospaceSoc_arm).
 
-![CAD rendering of the arm](/aerospaceSoc_arm/RobotArm_3D.png) ![3D CAD rendering of the PCB](/aerospaceSoc_arm/RobotArmPCB_3D-B_v0.2_DRAFT.png)
+<p float="centre">
+  <img src="aerospaceSoc_arm/RobotArm_3D.png" width="49%" />
+  <img src="aerospaceSoc_arm/RobotArmPCB_3D-B_v0.2_DRAFT.png" width="49%" />
+</p>
 
 ## Student Records System Group Project (C++)
 *C++ (inc. templates, polymorphism), Git*
